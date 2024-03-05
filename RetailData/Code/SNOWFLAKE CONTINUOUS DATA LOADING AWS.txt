@@ -1,0 +1,32 @@
+AWS:
+
+Create S3
+Create Bucket
+Create Folder
+Create Policy in IAM using json script
+Select policy as role in IAM
+Copy the ARN from IAM role for storage integration
+
+Snowflake:
+create storage integration using ARN from IAM
+Copy the storage id from executing desc integration 
+
+AWS:
+update policy trust relationship from IAM role and paste the storage id which is copied from snowflake integration
+
+Snowflake:
+create file format
+create stages using bucket id
+create pipeline using integration function, stages and file format
+Copy the notification channel by executing command show pipes
+
+AWS:
+Create event from S3 bucket, select SQS queue and paste the notification channel which is copied from snowflake
+Add files in bucket
+
+snowflake:
+check whether the data is added or not using alter command in snowflake
+
+
+
+
